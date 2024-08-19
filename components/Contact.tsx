@@ -35,10 +35,12 @@ const Contact = () => {
           variants={titleVariants}
         >
           <div className="w-full absolute left-0 bottom-0 min-h-96">
-            <img
+            <Image
               src="/footer-grid.svg"
               alt="grid"
-              className="w-full h-full opacity-50 "
+              className="w-full h-full opacity-50"
+              width={100}
+              height={100}
             />
           </div>
           <h1 className="text-3xl text-center text-white font-bold lg:max-w-[50vw]">
