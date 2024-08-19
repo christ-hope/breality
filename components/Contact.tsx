@@ -4,6 +4,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import MagicButton from "./ui/MagicButton";
+import config from "@/next.config";
+
+const baseUrl = config.basePath;
 
 const Contact = () => {
   const sectionVariants = {
@@ -35,7 +38,7 @@ const Contact = () => {
         >
           <div className="w-full absolute left-0 bottom-0 min-h-96">
             <Image
-              src="/footer-grid.svg"
+              src={`${baseUrl}/footer-grid.svg`}
               alt="grid"
               className="w-full h-full opacity-50"
               width={100}
