@@ -265,14 +265,14 @@ export const companies = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: `${baseUrl}/git.svg`,
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: `${baseUrl}/twit.svg`,
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: `${baseUrl}/link.svg`,
   },
 ];
