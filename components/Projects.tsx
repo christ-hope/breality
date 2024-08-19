@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { PinContainer } from "./ui/3DPinAnmation";
+import PinContainer  from "./ui/3DPinAnmation";
 import { motion } from "framer-motion";
-import { companies, projects } from "@/data";
+import { projects } from "@/data";
 import Image from "next/image";
 
 const Projects = () => {

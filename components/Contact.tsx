@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import { PinContainer } from "./ui/3DPinAnmation";
 import { motion } from "framer-motion";
-import { projects } from "@/data";
 import Image from "next/image";
 import MagicButton from "./ui/MagicButton";
 

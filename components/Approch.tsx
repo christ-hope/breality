@@ -35,12 +35,12 @@ const Approch = () => {
           <p className="text-4xl lg:text-6xl font-bold leading-snug text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600">
             Notre Approche
           </p>
-        </motion.div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+        <div className="mt-10 lg:mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
           {approchs.map((item, index) => (
             <Card key={index} element={item} />
           ))}
         </div>
+        </motion.div>
       </div>
     </motion.section>
   );

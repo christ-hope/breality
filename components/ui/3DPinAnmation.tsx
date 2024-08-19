@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-export const PinContainer = ({
+const PinContainer = ({
   children,
   title,
   href,
@@ -59,7 +60,7 @@ export const PinContainer = ({
   );
 };
 
-export const PinPerspective = ({
+const PinPerspective = ({
   title,
   href,
 }: {
@@ -164,3 +165,6 @@ export const PinPerspective = ({
     </motion.div>
   );
 };
+
+export default dynamic(() => Promise.resolve(PinContainer), { ssr: false });
+
