@@ -1,7 +1,11 @@
+import config from "@/next.config";
+
+const baseUrl = config.basePath;
+
 export const navItems = [
-  { name: "A Propos", link: "#About" },
-  { name: "Services", link: "#Services" },
-  { name: "Approches", link: "#approch" },
+  { name: "A Propos", link: "#about" },
+  { name: "Services", link: "#services" },
+  { name: "Approches", link: "#approchs" },
   { name: "Projets", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
@@ -14,7 +18,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 h-48 md:h-96",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: `${baseUrl}/b1.svg`,
   },
   {
     id: 2,
@@ -44,7 +48,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
+    img: `${baseUrl}/grid.svg`,
   },
 
   {
@@ -55,13 +59,14 @@ export const gridItems = [
     className: "md:col-span-6 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/grid.svg",
+    img: `${baseUrl}/grid.svg`,
   },
   {
     id: 6,
     title: "Prêt à concrétiser votre idée ?",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1 items-center justify-center ",
+    className:
+      "lg:col-span-2 md:col-span-3 md:row-span-1 items-center justify-center ",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -135,115 +140,92 @@ export const approchs = [
   {
     id: 1,
     title: "Maquettage & Création Multimédia",
-    description: "À partir des insights obtenus, nous concevons des solutions originales qui allient esthétique et fonctionnalité. Nos designers et stratèges collaborent étroitement pour développer des maquettes et des prototypes qui incarnent votre vision tout en optimisant l'expérience utilisateur.",
+    description:
+      "À partir des insights obtenus, nous concevons des solutions originales qui allient esthétique et fonctionnalité. Nos designers et stratèges collaborent étroitement pour développer des maquettes et des prototypes qui incarnent votre vision tout en optimisant l'expérience utilisateur.",
     icon: "",
   },
   {
     id: 2,
     title: "Developpement & Integration",
-    description: "Nous passons ensuite à la phase de réalisation, où nos développeurs et spécialistes en technologie construisent des plateformes robustes et évolutives. Chaque ligne de code est pensée pour garantir la performance, la sécurité, et la flexibilité, permettant ainsi à votre projet de grandir avec vos besoins.",
+    description:
+      "Nous passons ensuite à la phase de réalisation, où nos développeurs et spécialistes en technologie construisent des plateformes robustes et évolutives. Chaque ligne de code est pensée pour garantir la performance, la sécurité, et la flexibilité, permettant ainsi à votre projet de grandir avec vos besoins.",
     icon: "",
   },
   {
     id: 3,
     title: "Optimisation & Tests",
-    description: "Avant le lancement, nous effectuons des tests rigoureux pour garantir que chaque aspect de votre solution est optimisé pour la performance, l'ergonomie, et la sécurité.",
+    description:
+      "Avant le lancement, nous effectuons des tests rigoureux pour garantir que chaque aspect de votre solution est optimisé pour la performance, l'ergonomie, et la sécurité.",
     icon: "",
   },
   {
     id: 4,
     title: "Deploiement & Formation",
-    description: "Une fois les tests validés, nous déployons la solution et offrons une formation complète à votre équipe pour assurer une prise en main rapide et efficace.Notre objectif est de vous rendre autonome, tout en restant à votre disposition pour tout besoin futur.",
+    description:
+      "Une fois les tests validés, nous déployons la solution et offrons une formation complète à votre équipe pour assurer une prise en main rapide et efficace.Notre objectif est de vous rendre autonome, tout en restant à votre disposition pour tout besoin futur.",
     icon: "",
   },
   {
     id: 5,
     title: "Suivi, Analyse & Améliorations",
-    description: "Post-lancement, nous continuons à suivre la performance de votre projet à travers des outils d'analyse avancés. Nous fournissons au besoins des rapports réguliers et des recommandations pour ajuster la stratégie marketing, tout en assurant la maintenance technique et les mises à jour nécessaires pour garder votre solution à la pointe.",
+    description:
+      "Post-lancement, nous continuons à suivre la performance de votre projet à travers des outils d'analyse avancés. Nous fournissons au besoins des rapports réguliers et des recommandations pour ajuster la stratégie marketing, tout en assurant la maintenance technique et les mises à jour nécessaires pour garder votre solution à la pointe.",
     icon: "",
   },
-  
 ];
 
 export const projects = [
   {
     id: 1,
     title: "3D Solar System Planets to Explore",
-    description: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    description:
+      "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    img: `${baseUrl}/p1.svg`,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://github.com/christ-hope?tab=repositories",
   },
   {
     id: 2,
     title: "Yoom - Video Conferencing App",
-    description: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    description:
+      "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    img: `${baseUrl}/p2.svg`,
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/christ-hope?tab=repositories",
   },
   {
     id: 3,
     title: "AI Image SaaS - Canva Application",
-    description: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    description:
+      "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    img: `${baseUrl}/p3.svg`,
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://github.com/christ-hope?tab=repositories",
   },
   {
     id: 4,
     title: "KwetuLearn",
-    description: "Système de gestion académique et éducative (En cours de developpement)",
-    img: "/p5.jpg",
+    description:
+      "Système de gestion académique et éducative (En cours de developpement)",
+    img: `${baseUrl}/p5.jpg`,
     link: "https://github.com/christ-hope?tab=repositories",
   },
   {
     id: 5,
     title: "Animated Apple Iphone 3D Website",
-    description: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    description:
+      "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: `${baseUrl}/p4.svg`,
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/christ-hope?tab=repositories",
   },
   {
     id: 5,
     title: "HealthConnect",
-    description: "Plateforme complète de gestion et de suivi médical. (En cours de developpement)",
-    img: "/p3.svg",
+    description:
+      "Plateforme complète de gestion et de suivi médical. (En cours de developpement)",
+    img: `${baseUrl}/p3.svg`,
     link: "https://github.com/christ-hope?tab=repositories",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
   },
 ];
 

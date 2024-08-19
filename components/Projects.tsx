@@ -19,6 +19,7 @@ const Projects = () => {
 
   return (
     <motion.section
+      id="projects"
       className="w-full flex flex-col items-center mb-20"
       initial="hidden"
       whileInView="visible"

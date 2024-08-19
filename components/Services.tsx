@@ -18,6 +18,7 @@ const Services = () => {
 
   return (
     <motion.section
+      id="services"
       className="w-full relative"
       initial="hidden"
       whileInView="visible"

@@ -18,6 +18,7 @@ const Contact = () => {
 
   return (
     <motion.section
+      id="contact"
       className="w-full flex flex-col items-center mt-10 mb-20"
       initial="hidden"
       whileInView="visible"
